@@ -4,7 +4,8 @@ type SortType = "ASC" | "DESC";
 
 const input = [11, 1, 2, 3, 4, 5, 6, 8, 7, 9, 67, 54, 99, 0];
 
-const merge = (coll1: number[], coll2: number[], sortType: SortType = "ASC"): number[] => {
+// O(nlgn)
+export const merge = (coll1: number[], coll2: number[], sortType: SortType = "ASC"): number[] => {
     const finalRes = [];
 
     let c1Idx = 0;
@@ -27,7 +28,7 @@ const merge = (coll1: number[], coll2: number[], sortType: SortType = "ASC"): nu
     return finalRes;
 };
 
-const mergeAndSort = (integerCollection: number[], sortType: SortType = "ASC"): number[] => {
+export const mergeAndSort = (integerCollection: number[], sortType: SortType = "ASC"): number[] => {
     if (integerCollection.length <= 1) return integerCollection;
 
     const sortedColl1 = mergeAndSort(
@@ -42,4 +43,4 @@ const mergeAndSort = (integerCollection: number[], sortType: SortType = "ASC"): 
     return merge(sortedColl1, sortedColl2, sortType);
 };
 
-console.log(mergeAndSort(input, "ASC"));
+// console.log(mergeAndSort(input, "ASC"));
