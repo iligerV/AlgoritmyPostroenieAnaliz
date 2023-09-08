@@ -3,7 +3,7 @@
 const input = [13, -3, -25, 20, -3, -26, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7, 10000];
 
 // O(n)
-const findMaximumSubarray = (input: number[]) => {
+const findMaximumSubarrayLinear = (input: number[]) => {
     if (input.length === 0) return null;
     let maxLow = 0;
     let maxHigh = 0;
@@ -27,4 +27,4 @@ const findMaximumSubarray = (input: number[]) => {
     return [maxLow, maxHigh, maxSum];
 };
 
-console.log(findMaximumSubarray(input));
+console.log(findMaximumSubarrayLinear(input));
