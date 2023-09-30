@@ -1,6 +1,6 @@
 // Сортировка слиянием + вставками
-import { merge } from '../mergeAndSort'
-import { insertionSort } from '../insertionSort'
+import { merge } from "../mergeAndSort";
+import { insertionSort } from "../insertionSort";
 
 type SortType = "ASC" | "DESC";
 
