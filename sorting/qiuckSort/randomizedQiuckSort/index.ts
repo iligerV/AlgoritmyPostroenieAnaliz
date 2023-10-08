@@ -1,14 +1,13 @@
 // Быстрая сортировка с рандомизацией
 
 import { getRandomInt } from "../../../randomizing/getRandomInt";
-
-type SortType = "ASC" | "DESC";
+import { SortType } from "..";
 
 const input1 = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11];
 const input2 = [11, 1, 2, 3, 4, 5, 6, 8, 7, 9, 67, 54, 99, 0];
 
 // O(n*lgn)
-// decrease worst case O(n^2) occurrence by selecting random lastInt in partion
+// decrease worst case O(n^2) occurrence by selecting random lastInt in Lomuto partion
 export const randomizedQiuckSort = (
     input: number[],
     sortType: SortType = "ASC",
