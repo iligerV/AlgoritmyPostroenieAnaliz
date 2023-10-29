@@ -23,7 +23,12 @@ export const randomizedQiuckSort = (
     return input;
 };
 
-const randomizedPartion = (input: number[], start, end, sortType: SortType) => {
+export const randomizedPartion = (
+    input: number[],
+    start: number,
+    end: number,
+    sortType: SortType
+) => {
     rearrangeLastIntWithRandomIdx(input, start, end);
 
     const lastInt = input[end];
@@ -45,11 +50,11 @@ const randomizedPartion = (input: number[], start, end, sortType: SortType) => {
     return pivotIdx + 1;
 };
 
-const rearrangeLastIntWithRandomIdx = (input: number[], start, end) => {
+const rearrangeLastIntWithRandomIdx = (input: number[], start: number, end: number) => {
     const randomIdx = getRandomInt(start, end);
     const tmp = input[end];
     input[end] = input[randomIdx];
     input[randomIdx] = tmp;
 };
 
-console.log(randomizedQiuckSort(input2, "DESC"));
+// console.log(randomizedQiuckSort(input2, "DESC"));
