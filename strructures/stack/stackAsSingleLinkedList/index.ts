@@ -1,6 +1,6 @@
 import { ListNode, SingleLinkedList } from "../../linkedList";
 
-class StackAsSingleLinkedList extends SingleLinkedList {
+export class StackAsSingleLinkedList extends SingleLinkedList {
     constructor(initStack: ListNode = null) {
         super(initStack);
     }
@@ -33,4 +33,4 @@ class StackAsSingleLinkedList extends SingleLinkedList {
 // console.log(s1.pop());
 // console.log(s1.pop());
 // console.log(s1.pop());
-// console.log(s1.getList());
+// console.log(s1.getHead());

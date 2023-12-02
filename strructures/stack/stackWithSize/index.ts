@@ -1,4 +1,4 @@
-class StackWithSize {
+export class StackWithSize {
     private stack: number[];
     private size = 0;
     private top = 0;
@@ -24,17 +24,17 @@ class StackWithSize {
     };
 }
 
-const s1 = new StackWithSize(3);
+// const s1 = new StackWithSize(3);
 
-console.log(s1.push(1));
-console.log(s1.push(2));
-console.log(s1.push(3));
-console.log(s1.pop());
-console.log(s1.pop());
-console.log(s1.push(4));
-console.log(s1.push(5));
-console.log(s1.pop());
-console.log(s1.push(6));
-console.log(s1.pop());
-console.log(s1.pop());
-console.log(s1.getStack());
+// console.log(s1.push(1));
+// console.log(s1.push(2));
+// console.log(s1.push(3));
+// console.log(s1.pop());
+// console.log(s1.pop());
+// console.log(s1.push(4));
+// console.log(s1.push(5));
+// console.log(s1.pop());
+// console.log(s1.push(6));
+// console.log(s1.pop());
+// console.log(s1.pop());
+// console.log(s1.getStack());
